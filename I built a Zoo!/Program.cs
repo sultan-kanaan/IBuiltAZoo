@@ -1,6 +1,4 @@
 ﻿using System;
-using I_built_a_Zoo_.classes;
-//using I_built_a_Zoo_.Interfaces;
 using static System.Console;
 
 namespace I_built_a_Zoo_
@@ -9,36 +7,57 @@ namespace I_built_a_Zoo_
     {
         static void Main(string[] args)
         {
-            WriteLine("\nSultan Kanaan");
             ForegroundColor = ConsoleColor.DarkMagenta ;
+            WriteLine("Code By Sultan Kanaan");
             WriteLine("=============Welcome To My ZOOOOOOOOO=============");
-            Pets.Kraken();
+            
+            
+            Falcon falcon = new Falcon();
+            WriteLine("=============FALCON=============");
+            falcon.Sound();
+            WriteLine( falcon.HowIFly());
+            falcon.DrawAvatar();
+            falcon.Beak();
+            WriteLine(falcon.Eat());
+            WriteLine(falcon.Hunter());
 
 
-            ForegroundColor = ConsoleColor.Magenta;
-            WriteLine(@"
-                         /\     /\
-                        {  `---'  }
-                        {  O   O  }
-                        ~~>  V  <~~
-                         \  \|/  /
-                          `-----'____
-                          /     \    \_
-                         {       }\  )_\_   _
-                         |  \_/  |/ /  \_\_/ )
-                         \__/  /(_/     \__/
-                           (__/
-   
-                        
+            Owl owl = new Owl();
+            WriteLine("=============OWL=============");
+            owl.DrawAvatar();
+            WriteLine(owl.Eat());
+            WriteLine(owl.InTheZoo);
+            owl.Sound();
 
- 
 
-                         ");
+            Cat cat = new Cat();
+            WriteLine("=============CAT=============");
+            WriteLine( cat.Eat());
+            cat.Sound();
+            cat.DrawAvatar();
+            cat.fur();
 
+
+            Rabbit rabbit = new Rabbit();
+            WriteLine("=============RABBIT=============");
+            rabbit.DrawAvatar();
+            rabbit.Sound();
+            rabbit.canSleep();
+            WriteLine(rabbit.Eat());
+
+
+            Tiger tiger = new Tiger();
+            WriteLine("=============TIGER=============");
+            tiger.DrawAvatar();
+            tiger.Sound();
+            WriteLine( tiger.Hunter());
 
             
+            Felines lion = new Lion();
+            WriteLine("=============LION=============");
+            lion.DrawAvatar();
+            lion.KIngOfTheJungle();
 
-            
             ForegroundColor = ConsoleColor.Black;
 
         }
