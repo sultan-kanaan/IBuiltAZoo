@@ -8,18 +8,11 @@ namespace I_built_a_Zoo_
 {
     public abstract class Pets : Animal
     {
-        public static string kraken { get; set; }
-        public static void Kraken() 
+        public abstract bool friendlyAnimals { get; set; }
+        public abstract void fur();
+        public virtual void playingWithChildren()
         {
-            Console.WriteLine( @"
-                  ,'''`.
-                 / _  _ \
-                 |(@)(@)|
-                 )  __  (
-                /,'))((`.\
-               (( ((  )) ))        
-                `\ `)(' /'
-                  ");
+
         }
     }
 }
